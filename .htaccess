@@ -1,0 +1,13 @@
+#отключение экранирования кавычек
+php_flag magic_qoutes_gpc Off 
+
+AddDefaultCharset UTF-8
+
+DirectoryIndex index.php
+
+RewriteEngine On
+
+RewriteCond  %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*) index.php
+
